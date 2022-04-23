@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "EuroStyle";
+  src: url("EuroStyle\ Normal.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EuroStyleBold";
+  src: url("EurostileBold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+$font_EuroStyle: "EuroStyle";
+$font_EuroStyleBold: "EuroStyleBold";

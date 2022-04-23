@@ -1,0 +1,18 @@
+import { useState, createContext } from "react";
+export const LoginContext = createContext();
+const LoginContextProvider = (props) => {
+  let [user, setUser] = useState(null);
+  let signin = (newUser, password) => {
+    if (password === "admin123") setUser(newUser);
+    else setUser(null);
+  };
+  let signout = () => {
+    setUser(null);
+  };
+  return (
+    <LoginContext.Provider value={{ user, signin, signout }}>
+      {props.children}
+    </LoginContext.Provider>
+  );
+};
+export default LoginContextProvider;
